@@ -15,7 +15,7 @@ var BoatLeftSide bool
 func main(){
 Init()
 	pws()
-	PutIn("Mann")
+	PutIn("Menneske")
 	pws()
 	CrossRiver()
 	pws()
@@ -27,7 +27,7 @@ func pws(){
 
 func Init(){
 	BoatLeftSide = true
-	Character_Names[0] = "Mann"
+	Character_Names[0] = "Menneske"
 	Character_Names[1] = "Korn"
 	Character_Names[2] = "Kylling"
 	Character_Names[3] = "Rev"
