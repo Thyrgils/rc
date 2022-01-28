@@ -7,7 +7,7 @@ import "testing"
 
 // test WorldState
 func TestReturnWorldState(t *testing.T){
-	wanted:= "Mann-Korn-Kylling-Rev- \\_ _ _/________ - - - -"
+	wanted:= "Menneske-Korn-Kylling-Rev- \\_ _ _/________ - - - -"
 	got := ReturnWorldState()
 	if(wanted != got){
 		t.Errorf("MakeWorldState Failed, Wanted: %s, Got %s", wanted, got)
@@ -16,8 +16,8 @@ func TestReturnWorldState(t *testing.T){
 
 // test PutIn
 func TestPutIn(t *testing.T){
-	wanted:= " -Korn-Kylling-Rev- \\_Mann_ _/________ - - - -"
-	got := PutIn("Mann")
+	wanted:= " -Korn-Kylling-Rev- \\_Menneske_ _/________ - - - -"
+	got := PutIn("Menneske")
 	if(wanted != got){
 		t.Errorf("PutIn Failed, Wanted: %s, Got %s", wanted, got)
 	}
@@ -25,7 +25,7 @@ func TestPutIn(t *testing.T){
 
 // test CrossRiver
 func TestCrossRiver(t *testing.T){
-	wanted := " -Korn-Kylling-Rev-________\\_Mann_ _/   - - - -"
+	wanted := " -Korn-Kylling-Rev-________\\_Menneske_ _/   - - - -"
 	got := CrossRiver()
 	if(wanted != got){
 		t.Errorf("CrossRiver Failed, Wanted: %s, Got %s", wanted, got)
