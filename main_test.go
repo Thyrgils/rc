@@ -1,6 +1,11 @@
+// package for testing of worldstate, Putin & Crossriver
+//
+
+
 package main
 import "testing"
 
+// test WorldState
 func TestReturnWorldState(t *testing.T){
 	wanted:= "Mann-Korn-Kylling-Rev- \\_ _ _/________ - - - -"
 	got := ReturnWorldState()
@@ -9,6 +14,7 @@ func TestReturnWorldState(t *testing.T){
 	}
 }
 
+// test PutIn
 func TestPutIn(t *testing.T){
 	wanted:= " -Korn-Kylling-Rev- \\_Mann_ _/________ - - - -"
 	got := PutIn("Mann")
@@ -17,6 +23,7 @@ func TestPutIn(t *testing.T){
 	}
 }
 
+// test CrossRiver
 func TestCrossRiver(t *testing.T){
 	wanted := " -Korn-Kylling-Rev-________\\_Mann_ _/   - - - -"
 	got := CrossRiver()
