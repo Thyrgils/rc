@@ -1,3 +1,6 @@
+// Rivercrossing !!! under arbeid !!!
+//
+
 package main
 
 import(
@@ -38,6 +41,7 @@ func Init(){
 	Character_Positions[3] = 0
 }
 
+// worldstate
 func ReturnWorldState() string{
 	Init()
 	return MakeWorldState()
@@ -77,6 +81,8 @@ func MakeLeftSide() string{
 	return res
 }
 
+
+// PutIn
 func PutIn(item string) string{
 	for i := 0; i < len(Character_Names); i++{
 		if(Character_Names[i] == item){
@@ -105,6 +111,7 @@ func MakeBoat() string{
 	return res
 }
 
+// Crossriver -
 func CrossRiver() string{
 	BoatLeftSide = !BoatLeftSide
 	
